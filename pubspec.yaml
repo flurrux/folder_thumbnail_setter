@@ -1,0 +1,27 @@
+name: folder_thumbnail_setter
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  uuid: ^4.4.2
+  desktop_drop: ^0.6.0
+  image: ^4.5.4
+  window_size: ^0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/folder-background.png
+    - assets/thumbnail-mask.png
