@@ -31,6 +31,13 @@ It works like this:
 	 
 	 <img src="readme_files/final folder thumbnail.jpg" height="200px" />
 
+Please be aware that this app is not super polished. There is pretty much no error handling at the moment.  
+If the folder already has a thumbnail, the app will get stuck at `Please wait ...`. It will have generated *another* `.ico` file, but won't be able to apply it!  
+(It's a good idea to delete this newer ico file to keep your folder tidy).  
+Don't know when i will get around to fixing it!  
+See the limitations-section below for more fun like this.  
+
+
 ## How to build
 
 The build process is exactly the same as in my other app:
@@ -49,6 +56,7 @@ The workaround is to copy the image inside the folder and then select it.
 ### Existing desktop.ini
 
 This app does not check if a `desktop.ini` already exists in the folder!  
+If it does, the app will get stuck at `Please wait ...` and it will have generated an unused .ico file.  
 It would definitely be nice to be able to __change__ the thumbnail if one already exists (keeping its contents, while only updating the icon).  
 The current workaround is to create a new folder and move the contents over.  
 There you can create a brandnew `desktop.ini`.  
